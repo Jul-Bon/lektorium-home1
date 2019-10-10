@@ -1,0 +1,130 @@
+//  Base styles
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+
+  @include max-w(2560px) {
+    font-size: 22px;
+  }
+
+  @include max-w(1600px) {
+    font-size: 18px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include max-w(1600px) {
+    max-width: 90%;
+  }
+}
+
+.big-col {
+  width: 70%;
+
+  @include max-w(640px) {
+    width: 100%;
+  }
+}
+
+.small-col {
+  width: 30%;
+
+  @include max-w(640px) {
+    width: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.light-text {
+  color: $light-text-color;
+}
+
+.dark-text {
+  color: $text-color;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.section-header {
+  min-height: 900px;
+  position: relative;
+
+  @include max-w(2560px) {
+    min-height: 700px;
+  }
+
+  @include max-w(1600px) {
+    min-height: 600px;
+  }
+
+  @include max-w(992px) {
+    min-height: 300px;
+    padding: 50px 30px;
+  }
+
+  @include max-w(640px) {
+    min-height: auto;
+  }
+
+  .section-title {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+
+    @include max-w(992px) {
+      position: static;
+    }
+  }
+}
+
+.section-title {
+  font-size: 96px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include max-w(2560px) {
+    font-size: 48px;
+  }
+
+  @include max-w(1600px) {
+    font-size: 42px;
+  }
+
+  @include max-w(1280px) {
+    font-size: 34px;
+  }
+
+  @include max-w(992px) {
+    font-size: 30px;
+  }
+}

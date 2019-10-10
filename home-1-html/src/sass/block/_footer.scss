@@ -1,0 +1,172 @@
+.page-footer {
+    background-color: $bg-color;
+
+    @include max-w(640px) {
+        flex-direction: column;
+    }
+
+    &__part {
+        width: 50%;
+
+        @include max-w(640px) {
+            width: 100%;
+        }
+    }
+}
+
+.footer-map {
+    @include max-w(640px) {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.footer-info {
+    padding: 300px 340px 160px 230px;
+    justify-content: space-between;
+
+    @include max-w(2560px) {
+        padding: 150px 170px 80px 110px;
+    }
+
+    @include max-w(1600px) {
+        padding: 70px 60px 30px;
+    }
+
+    @include max-w(992px) {
+        padding: 40px 30px 20px;
+    }
+
+    .footer-intro {
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        @include max-w(992px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .contacts-info {
+        text-transform: uppercase;
+        font-size: 26px;
+        line-height: 1.1;
+
+        @include max-w(2560px) {
+            font-size: 22px;
+        }
+
+        @include max-w(1600px) {
+            font-size: 18px;
+        }
+
+        @include max-w(1280px) {
+            font-size: 16px;
+        }
+
+        @include max-w(992px) {
+            font-size: 14px;
+        }
+
+        @include max-w(992px) {
+            font-size: 12px;
+        }
+    }
+
+    .address {
+        max-width: 195px;
+
+        @include max-w(992px) {
+            max-width: 150px;
+        }
+    }
+
+    .contacts {
+        max-width: 266px;
+        flex-direction: column;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .social-links {
+        margin: 0;
+
+        @include max-w(2560px) {
+            font-size: 26px;
+        }
+
+        @include max-w(1600px) {
+            font-size: 22px;
+        }
+
+        @include max-w(992px) {
+            font-size: 18px;
+        }
+    }
+
+    .social-link {
+        color: $main-accent-color;
+    }
+
+    .main-intro {
+        @include max-w(2560px) {
+            max-width: 170px;
+        }
+
+        @include max-w(1600px) {
+            max-width: 130px;
+        }
+
+        @include max-w(992px) {
+            max-width: 100px;
+        }
+    }
+
+    .main-title {
+        @include max-w(2560px) {
+            font-size: 30px;
+            margin-bottom: 100px;
+        }
+
+        @include max-w(1600px) {
+            font-size: 22px;
+            margin-bottom: 60px;
+        }
+
+        @include max-w(1280px) {
+            font-size: 18px;
+        }
+
+        @include max-w(992px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.footer-copyright {
+    color: $copyright-color;
+    font-size: 24px;
+
+    @include max-w(2560px) {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    @include max-w(1600px) {
+        font-size: 16px;
+    }
+
+    @include max-w(1280px) {
+        font-size: 14px;
+    }
+
+    @include max-w(992px) {
+        font-size: 12px;
+    }
+}
